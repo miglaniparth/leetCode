@@ -5,9 +5,6 @@ class Solution {
             if(s.charAt(i)=='(' || s.charAt(i)=='[' || s.charAt(i)=='{' ){
                 stack.push(s.charAt(i));
             }
-            else if(stack.isEmpty()){
-                return false;
-            }
             if(s.charAt(i)==')'){
                 if(stack.isEmpty() || stack.peek()!='(')
                     return false;
