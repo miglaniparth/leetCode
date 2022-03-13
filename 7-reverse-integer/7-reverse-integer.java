@@ -8,12 +8,11 @@ class Solution {
         }
         while(x>0){
             if(ans>Integer.MAX_VALUE /10|| ans<Integer.MIN_VALUE/10){
-            return 0;}
+            return 0;
+            }
             ans*=10;
             ans+=x%10;
-            x/=10;
-            
-        
+            x/=10; 
         }
         if(isNegative){
             ans=-1*ans;
