@@ -25,9 +25,6 @@ class Solution {
         while(!stack.isEmpty()){
             ans="/"+stack.pop()+ans;
         }
-        // if(ans.charAt(ans.length()-1)=='/'){
-        //     ans=ans.substring(0,ans.length()-1);
-        // }
         return ans;
     }
 }
